@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
-		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -43,7 +43,7 @@
 
 		<!-- Opening slides -->
 			<section>
-  			<img src="img/gdi_logo_badge.png" alt="Girl Develop It" style="max-height: 400px;">
+  			<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;">
   			<h1 id="slide1" style="font-size: 2em;">Intro to Web Accessibility</h1>
         <h2>Class 2</h2>
 			</section>
@@ -161,9 +161,11 @@
         <h2>Let's develop it</h2>
         <h3>Add labels to an HTML form</h3>
         <!-- demo here -->
-        <pre><code data-trim>
+        <pre><code>
 &lt;label for="name-field"&gt;Label&lt;/label&gt;
-&lt;input type="text" id="name-field" name="name-field" placeholder="Type your name" /&gt;
+&lt;input type="text" id="name-field" 
+       name="name-field" 
+       placeholder="Type your name" /&gt;
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -368,12 +370,10 @@
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
