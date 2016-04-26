@@ -92,7 +92,7 @@
               <li>Lack of "skip to main content" or "skip navigation" links</li>
             </ul>
         </div>
-          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey5/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, February&nbsp;2014<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey6/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></p>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
 
@@ -196,7 +196,7 @@
    &lt;span&gt;
 &lt/a&gt;
           </code></pre>
-          <p>For links that open in new windows, an offscreen <code>span</code> inside the link is most reliable for screen readers, but <code>title=""</code> can also be used.</p>
+          <p>For links that open in new windows, an offscreen <code>span</code> inside the link helps to warn screen reader users of links using <code>title="_blank"</code>.</p>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
 
@@ -261,15 +261,15 @@
         <h2>Really Hidden</h2>
         <h3>How to show and hide content from all users</h3>
         <!-- cod example here -->
-        <pre><code data-trim>
-      .reallyHidden {
-        display: none;
-        visibility: hidden;
-      }
-      .notHidden {
-        display: block;
-        visibility: visible;
-      }
+        <pre><code>
+    .someElement {
+      display: block;
+      visibility: visible;
+    }
+    .someElement.hidden {
+      display: none;
+      visibility: hidden;
+    }
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -279,6 +279,17 @@
         <h3>Explore keyboard navigation with content that is hidden and offscreen</h3>
         <!-- demo here -->
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
+
+      <section>
+        <h2>Common Combinations</h2>
+        <ul>
+          <li>Mobile Safari and Voiceover</li>
+          <li>Firefox and NVDA</li>
+          <li>IE and JAWS</li>
+          <li>Safari and Voiceover</li>
+          <li>Mobile Firefox and Talkback</li>
+        </ul>
       </section>
 
       <section>
@@ -317,6 +328,14 @@
               <pre><code class="html xml">   <span class="tag">&lt;<span class="title">input</span> <span class="attribute">aria-required</span>=<span class="value">"true"</span>&gt;</span></code></pre>
             </div>
           </div>
+      </section>
+
+      <section>
+        <h2>Using the aXe Extension</h2>
+        <ul>
+          <li><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">aXe Chrome</a></li>
+          <li><a href="https://addons.mozilla.org/en-us/firefox/addon/axe-devtools/">aXe Firefox</a></li>
+        </ul>
       </section>
 
 			<section>
