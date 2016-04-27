@@ -166,6 +166,11 @@
 &lt;input type="text" id="name-field" 
        name="name-field" 
        placeholder="Type your name" /&gt;
+
+&lt;label>
+  Name
+  &lt;input type="text">
+&lt;/label>
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -224,6 +229,18 @@
           <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
+
+      <section>
+        <h2>Image alt</h2>
+        <p>Images need some kind of text alternative for screen reader users to know what's in it.</p>
+        <p>If the image is decorative, you can leave it blank.</p>
+        <pre><code class="html">
+  &lt;img src="cats.jpg" alt="Cats on parade">
+
+  &lt;img src="bullet.png" alt="">
+        </code></pre>
+        <p><a href="http://webaim.org/techniques/alttext/">WebAIM: Alt text</a></p>
+      </section>
 
       <section>
         <h2>How do I code for accessibility?</h2>
