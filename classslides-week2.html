@@ -103,8 +103,8 @@
         <ul style="padding-right: 30%;">
             <li>Headings &amp; Semantic Structure</li>
             <li>Form Labels &amp; Text Alternatives</li>
+            <li>Image alt text</li>
             <li>Tab Index</li>
-            <li>External link indicators</li>
         </ul>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -130,7 +130,21 @@
         <p><a href="http://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" title="Link opens in a new window">The HTML5 Document Outline
 <span class="visuallyhidden"> opens in a new window</span></a><br> by the Paciello Group</p>
         <!-- explanation here -->
-  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        <p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
+
+      <section>
+        <h2>HTML Landmark Regions</h2>
+        <p>Screen readers can navigate page landmarks, such as <code>&lt;header></code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+        <p>Roles are still needed for older versions of IE.</p>
+        <pre><code class="html">
+&lt;header role="banner">A banner image and introductory title&lt;/header>
+&lt;form role="search">....&lt;/form>
+&lt;nav role="navigation">...a list of links here ... &lt;/nav>
+&lt;main role="main"> ... Dogs and cats are the best ...&lt;/main>
+&lt;footer role="contentinfo">(c) Kids, Incorporated&lt;/footer>
+        </code></pre>
+        <p><a href="https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html">More about HTML5 Landmarks</a></p>
       </section>
 
       <section>
@@ -173,33 +187,6 @@
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
 
-        <section>
-          <h2>Tab Index</h2>
-          <h3>What is it?</h3>
-          <p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. It can be used to define whether elements should be focusable. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
-          <div style="padding-top:20px;">
-            <some-control tabindex="0">Custom control</some-control>
-            <a href="javascript:return false;" tabindex="-1">Link removed from tab order</a>
-            <a href="#footer" class="visuallyhidden focusable">Skip link</a>
-            <footer id="footer" tabindex="-1">Element catching skip link focus</footer>
-          </div>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-          <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
-        </section>
-
-        <section>
-          <h2>Let's Develop It</h2>
-          <h3>Explore tabindex on HTML elements</h3>
-          <pre><code data-trim>
- &lt;some-control tabindex="0"&gt;Custom control&lt;some-control&gt;
- &lt;a href="#" tabindex="-1"&gt;Link removed from tab order&lt;/a&gt;
- &lt;a href="#footer" class="visuallyhidden focusable">Skip link&lt;/a>
- &lt;footer id="footer" tabindex="-1"&gt;Element catching skip link focus&lt;div&gt;
-          </code></pre>
-          <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
-
       <section>
         <h2>Image alt text</h2>
         <p>Images need some kind of text alternative for screen reader users to know what's in them.</p>
@@ -211,6 +198,34 @@
         </code></pre>
         <p><a href="http://webaim.org/techniques/alttext/">WebAIM: Alt text</a></p>
       </section>
+
+        <section>
+          <h2>Tab Index</h2>
+          <h3>What is it?</h3>
+          <p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+          <p><code>tabindex="0"</code> makes something focusable.<br>
+          <code>tabindex="-1"</code> removes focusability, or makes it focusable by script only.</p>
+          <div style="padding-top:20px;">
+            <some-control tabindex="0">Custom control (focusable DIV)</some-control><br>
+            <a href="javascript:return false;" tabindex="-1">Link removed from tab order</a><br>
+          </div>
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+          <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
+        </section>
+
+        <section>
+          <h2>Let's Develop It</h2>
+          <h3>Explore tabindex on HTML elements</h3>
+          <pre><code>
+ &lt;some-control tabindex="0"&gt;Custom control&lt;some-control&gt;
+ &lt;a href="#" tabindex="-1"&gt;Link removed from tab order&lt;/a&gt;
+
+ &lt;a href="#footer" class="visuallyhidden focusable">Skip link&lt;/a>
+ &lt;footer id="footer" tabindex="-1"&gt;Element catching skip link focus&lt;div&gt;
+          </code></pre>
+          <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        </section>
 
       <section>
         <h2>How do I code for accessibility?</h2>
@@ -239,6 +254,15 @@
        padding: 0;
        position: absolute;
        width: 1px;
+    }
+    .visuallyhidden .focusable:active,
+    .visuallyhidden .focusable:focus {
+       clip: auto;
+       height: auto;
+       margin: 0;
+       overflow: visible;
+       position: static;
+       width: auto;
     }
         </code></pre>
         <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
@@ -272,12 +296,12 @@
         <p>Preserve the browser's default focus style whenever possible.</p>
         <p>If necessary, define custom focus styles in CSS.</p>
         <pre><code class="css">
-  // PLEASE DO NOT DO THIS EVER
-  * {
+  // This is bad since it removes all focus styles.
+  *:focus {
     outline: 0;
   } 
 
-  // DO THIS INSTEAD
+  // Use custom styles instead!
   a:hover,
   a:focus {
     color: #000;
@@ -347,6 +371,7 @@
         <h2>How can I debug ARIA?</h2>
         <h3>The Accessibility Tree</h3>
         <img src="img/chrome-accessibility-tree.png" alt="Accessibility Tree in Chrome" class="plain">
+        <p><a href="https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/">The Browser Accessibility Tree: Paciello Group</a></p>
       </section>
 
       <section>
