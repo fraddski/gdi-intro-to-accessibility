@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
-      <!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
-      <!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">
-      <link rel="stylesheet" href="lib/css/zenburn.css">-->
+    <!-- light editor--><link rel="stylesheet" href="lib/css/light.css">
+    <!-- dark editor<link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">-->
 
     <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
 		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -43,7 +44,7 @@
 
 		<!-- Opening slides -->
 			<section>
-  			<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;">
+  			<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;" class="noborder">
   			<h1 id="slide1" style="font-size: 2em;">Intro to Web Accessibility</h1>
         <h2>Class 2</h2>
 			</section>
@@ -176,7 +177,7 @@
         <h3>Add labels to an HTML form</h3>
         <pre><code>
 &lt;label for="name-field">Label&lt;/label>
-&lt;input type="text" id="name-field" 
+&lt;input type="text" id="name-field"
        name="name-field">
 
 &lt;label>
@@ -299,7 +300,7 @@
   // This is bad since it removes all focus styles.
   *:focus {
     outline: 0;
-  } 
+  }
 
   // Use custom styles instead!
   a:hover,
@@ -349,19 +350,19 @@
             <div class="definition">
               <h4 style="margin-top: 0.75em">Roles</h4>
               <p>What does this thing do?</p>
-              <pre><code class="html xml">   
+              <pre><code class="html xml">
               &lt;form role="search"&gt;</code></pre>
             </div>
             <div class="definition">
               <h4 style="margin-top: 0.75em">Properties</h4>
               <p>The nature of the thing</p>
-              <pre><code class="html xml">   
+              <pre><code class="html xml">
               &lt;button aria-label="Search"&gt;&lt;/button></code></pre>
             </div>
             <div class="definition">
               <h4 style="margin-top: 0.75em">States</h4>
               <p>The current condition of this particular thing</p>
-              <pre><code class="html xml"> 
+              <pre><code class="html xml">
               &lt;input aria-invalid="true"&gt;</code></pre>
             </div>
           </div>
