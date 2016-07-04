@@ -297,12 +297,12 @@
         <p>Preserve the browser's default focus style whenever possible.</p>
         <p>If necessary, define custom focus styles in CSS.</p>
         <pre><code class="css">
-  // This is bad since it removes all focus styles.
+  /* This is bad since it removes all focus styles. */
   *:focus {
     outline: 0;
   }
 
-  // Use custom styles instead!
+  /* Use custom styles instead! */
   a:hover,
   a:focus {
     color: #000;
