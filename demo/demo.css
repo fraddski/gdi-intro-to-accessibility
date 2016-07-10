@@ -24,7 +24,7 @@
     width: auto;
 }
 
-.reallyHidden {
+.hidden {
   display: none;
   visibility: hidden;
 }

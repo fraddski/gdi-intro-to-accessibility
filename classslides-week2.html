@@ -38,11 +38,11 @@
 
 	<body>
 
-		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
-		<!-- Opening slides -->
+			<!-- Opening slides -->
 			<section>
   			<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 400px;" class="noborder">
   			<h1 id="slide1" style="font-size: 2em;">Intro to Web Accessibility</h1>
@@ -52,19 +52,17 @@
 			<!-- Welcome-->
 			<section>
 			  <h2>Welcome!</h2>
-			  <div class="left-align">
 			  <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-			  <p class ="green">Some "rules"</p>
+			  <p class="green">Some "rules"</p>
 			  <ul>
-				<li>We are here for you!</li>
-				<li>Every question is important</li>
-				<li>Help each other</li>
-				<li>Have fun</li>
+					<li>We are here for you!</li>
+					<li>Every question is important</li>
+					<li>Help each other</li>
+					<li>Have fun</li>
 			  </ul>
-			  </div>
 			</section>
 
-        <!-- Intro: What is Accessibility?-->
+      <!-- Intro: What is Accessibility?-->
 			<section>
 				<h2>What is accessibility?</h2>
 				<ul>
@@ -78,37 +76,37 @@
 			<section>
 				<h2>What are the common problems?</h2>
         <div id="webaim-survey-problematic-items" style="background: url(img/webaim-survey-problematic-items.png) no-repeat center top; background-size: 70% auto; padding-top: 48%; width: 100%;">
-            <ul class="visuallyhidden">
-              <li>The presence of inaccessible Flash content</li>
-              <li>CAPTCHA - images presenting text used to verify that you are a human user</li>
-              <li>Links or buttons that do not make sense</li>
-              <li>Images with missing or improper descriptions (alt text)</li>
-              <li>Screens or parts of screens that change unexpectedly</li>
-              <li>Complex or difficult forms</li>
-              <li>Lack of keyboard accessibility</li>
-              <li>Missing or improper headings</li>
-              <li>Too many links or navigation items</li>
-              <li>Complex data tables</li>
-              <li>Inaccessible or missing search functionality</li>
-              <li>Lack of "skip to main content" or "skip navigation" links</li>
-            </ul>
+          <ul class="visuallyhidden">
+            <li>The presence of inaccessible Flash content</li>
+            <li>CAPTCHA - images presenting text used to verify that you are a human user</li>
+            <li>Links or buttons that do not make sense</li>
+            <li>Images with missing or improper descriptions (alt text)</li>
+            <li>Screens or parts of screens that change unexpectedly</li>
+            <li>Complex or difficult forms</li>
+            <li>Lack of keyboard accessibility</li>
+            <li>Missing or improper headings</li>
+            <li>Too many links or navigation items</li>
+            <li>Complex data tables</li>
+            <li>Inaccessible or missing search functionality</li>
+            <li>Lack of "skip to main content" or "skip navigation" links</li>
+          </ul>
         </div>
-          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey6/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></p>
+        <p>Source: <a href="http://webaim.org/projects/screenreadersurvey6/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></p>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
 
-      <section>
-        <h2>How do I code for accessibility?</h2>
-        <h3>HTML</h3>
-        <img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position: absolute; right: 0;" />
-        <ul style="padding-right: 30%;">
-            <li>Headings &amp; Semantic Structure</li>
-            <li>Form Labels &amp; Text Alternatives</li>
-            <li>Image alt text</li>
-            <li>Tab Index</li>
-        </ul>
-  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-      </section>
+			<section>
+				<h2>How do I code for accessibility?</h2>
+				<h3>HTML</h3>
+				<img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" class="noborder" style="position: absolute; right: 0;" />
+				<ul style="padding-right: 30%;">
+					<li>Headings &amp; Semantic Structure</li>
+					<li>Form Labels &amp; Text Alternatives</li>
+					<li>Image alt text</li>
+					<li>Tab Index</li>
+				</ul>
+				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+			</section>
 
       <section>
         <h2>HTML Headings</h2>
@@ -120,7 +118,7 @@
  &lt;h3&gt;Third most important&lt;/h3&gt;
  &lt;h4&gt;Other heading&lt;/h4&gt;
         </code></pre>
-        <p>Tip: use the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">Firefox Web Developer Toolbar</a> to inspect headings. Look under Information > View Document Outline.</p>
+        <p>Tip: use the <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Firefox Web Developer Toolbar<span class="visuallyhidden"> opens in a new window</span></a> to inspect headings. Look under Information > View Document Outline.</p>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
 
@@ -128,9 +126,7 @@
         <h2>HTML5 Headings</h2>
         <h3>Not a thing</h3>
         <img src="img/html5-girl.png" alt="HTML5 Girl" />
-        <p><a href="http://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" title="Link opens in a new window">The HTML5 Document Outline
-<span class="visuallyhidden"> opens in a new window</span></a><br> by the Paciello Group</p>
-        <!-- explanation here -->
+        <p><a href="http://html5doctor.com/computer-says-no-to-html5-document-outline/" target="_blank" title="Link opens in a new window">Computer says NO to HTML5 document outline<span class="visuallyhidden"> opens in a new window</span></a></p>
         <p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
 
@@ -140,21 +136,20 @@
         <p>Roles are still needed for older versions of IE.</p>
         <pre><code class="html">
 &lt;header role="banner">A banner image and introductory title&lt;/header>
-&lt;form role="search">....&lt;/form>
-&lt;nav role="navigation">...a list of links here ... &lt;/nav>
-&lt;main role="main"> ... Dogs and cats are the best ...&lt;/main>
+&lt;nav role="navigation"> ...a list of links here... &lt;/nav>
+&lt;main role="main"> ...Dogs and cats are the best... &lt;/main>
+&lt;aside role="complementary"> ...secondary information here... &lt;/aside>
 &lt;footer role="contentinfo">(c) Kids, Incorporated&lt;/footer>
         </code></pre>
-        <p><a href="https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html">More about HTML5 Landmarks</a></p>
+        <p><a href="https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html" target="_blank" title="Link opens in a new window">More about HTML5 Landmarks<span class="visuallyhidden"> opens in a new window</span></a></p>
       </section>
 
       <section>
         <h2>Form Labels</h2>
         <h3>How do they work?</h3>
-        <!-- explanation here -->
         <div class="code-example">
           <label for="name-field">Name</label>
-          <input type="text" id="name-field" name="name-field" placeholder="Type your furry friend's name" />
+          <input type="text" id="name-field" placeholder="Type your furry friend's name" />
           <div class="float">
             <label for="species-dog">Dog</label>
             <input type="radio" id="species-dog" name="species" />
@@ -166,8 +161,13 @@
           <div class="clear"></div>
         </div>
         <pre><code data-trim>
-&lt;label for="name-field"&gt;Label&lt;/label&gt;
-&lt;input type="text" id="name-field" name="name-field"&gt;
+&lt;label for="name-field"&gt;Name&lt;/label&gt;
+&lt;input type="text" id="name-field"&gt;
+
+&lt;label>
+  Name
+  &lt;input type="text">
+&lt;/label>
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -175,16 +175,6 @@
       <section>
         <h2>Let's develop it</h2>
         <h3>Add labels to an HTML form</h3>
-        <pre><code>
-&lt;label for="name-field">Label&lt;/label>
-&lt;input type="text" id="name-field"
-       name="name-field">
-
-&lt;label>
-  Name
-  &lt;input type="text">
-&lt;/label>
-        </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
 
@@ -197,36 +187,36 @@
 
   &lt;img src="bullet.png" alt="">
         </code></pre>
-        <p><a href="http://webaim.org/techniques/alttext/">WebAIM: Alt text</a></p>
+        <p><a href="http://webaim.org/techniques/alttext/" target="_blank" title="Link opens in a new window">WebAIM: Alt text<span class="visuallyhidden"> opens in a new window</span></a></p>
       </section>
 
-        <section>
-          <h2>Tab Index</h2>
-          <h3>What is it?</h3>
-          <p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
-          <p><code>tabindex="0"</code> makes something focusable.<br>
-          <code>tabindex="-1"</code> removes focusability, or makes it focusable by script only.</p>
-          <div style="padding-top:20px;">
-            <some-control tabindex="0">Custom control (focusable DIV)</some-control><br>
-            <a href="javascript:return false;" tabindex="-1">Link removed from tab order</a><br>
-          </div>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-          <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
-        </section>
+      <section>
+        <h2>Tab Index</h2>
+        <h3>What is it?</h3>
+        <p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+        <p><code>tabindex="0"</code> makes something focusable.<br>
+        <code>tabindex="-1"</code> removes focusability, or makes it focusable by script only.</p>
+        <div style="padding-top:20px;">
+          <some-control tabindex="0">Custom control (focusable DIV)</some-control><br>
+          <a href="javascript:return false;" tabindex="-1">Link removed from tab order</a><br>
+        </div>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
+      </section>
 
-        <section>
-          <h2>Let's Develop It</h2>
-          <h3>Explore tabindex on HTML elements</h3>
-          <pre><code>
- &lt;some-control tabindex="0"&gt;Custom control&lt;some-control&gt;
- &lt;a href="#" tabindex="-1"&gt;Link removed from tab order&lt;/a&gt;
+      <section>
+        <h2>Let's Develop It</h2>
+        <h3>Explore tabindex on HTML elements</h3>
+        <pre><code>
+&lt;some-control tabindex="0"&gt;Custom control&lt;some-control&gt;
+&lt;a href="#" tabindex="-1"&gt;Link removed from tab order&lt;/a&gt;
 
- &lt;a href="#footer" class="visuallyhidden focusable">Skip link&lt;/a>
- &lt;footer id="footer" tabindex="-1"&gt;Element catching skip link focus&lt;div&gt;
-          </code></pre>
-          <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+&lt;a href="#footer" class="visuallyhidden focusable">Skip link&lt;/a>
+&lt;footer id="footer" tabindex="-1"&gt;Element catching skip link focus&lt;div&gt;
+        </code></pre>
+        <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Not recommended!</p>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
 
       <section>
         <h2>How do I code for accessibility?</h2>
@@ -266,7 +256,7 @@
        width: auto;
     }
         </code></pre>
-        <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
+        <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility" target="_blank" title="Link opens in a new window">Hiding Content for Accessibility<span class="visuallyhidden"> opens in a new window</span></a></p>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
 
@@ -317,17 +307,6 @@
       </section>
 
       <section>
-        <h2>Common Combinations</h2>
-        <ul>
-          <li>Mobile Safari and Voiceover</li>
-          <li>Firefox and NVDA</li>
-          <li>IE and JAWS</li>
-          <li>Safari and Voiceover</li>
-          <li>Mobile Firefox and Talkback</li>
-        </ul>
-      </section>
-
-      <section>
         <h2>How do I code for accessibility?</h2>
         <h3>ARIA: Accessible Rich Internet Applications</h3>
         <ul>
@@ -335,7 +314,7 @@
           <li>Communicates state and purpose to assistive technologies.</li>
           <li>Used mainly for custom widgets and web applications.</li>
         </ul>
-        <p style="margin-top:1em;"><a href="https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/" target="_blank">What is WAI-ARIA, what does it do for me, and what not?<span class="visuallyhidden"> opens in a new window</span></a></p>
+        <p style="margin-top:1em;"><a href="https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/" target="_blank" title="Link opens in a new window">What is WAI-ARIA, what does it do for me, and what not?<span class="visuallyhidden"> opens in a new window</span></a></p>
       </section>
 
       <section>
@@ -350,20 +329,17 @@
             <div class="definition">
               <h4 style="margin-top: 0.75em">Roles</h4>
               <p>What does this thing do?</p>
-              <pre><code class="html xml">
-              &lt;form role="search"&gt;</code></pre>
+              <pre><code class="html xml">&lt;form role="search"&gt;</code></pre>
             </div>
             <div class="definition">
               <h4 style="margin-top: 0.75em">Properties</h4>
               <p>The nature of the thing</p>
-              <pre><code class="html xml">
-              &lt;button aria-label="Search"&gt;&lt;/button></code></pre>
+              <pre><code class="html xml">&lt;button aria-label="Search"&gt;&lt;/button></code></pre>
             </div>
             <div class="definition">
               <h4 style="margin-top: 0.75em">States</h4>
               <p>The current condition of this particular thing</p>
-              <pre><code class="html xml">
-              &lt;input aria-invalid="true"&gt;</code></pre>
+              <pre><code class="html xml">&lt;input aria-invalid="true"&gt;</code></pre>
             </div>
           </div>
       </section>
@@ -371,45 +347,48 @@
       <section>
         <h2>How can I debug ARIA?</h2>
         <h3>The Accessibility Tree</h3>
-        <img src="img/chrome-accessibility-tree.png" alt="Accessibility Tree in Chrome" class="plain">
-        <p><a href="https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/">The Browser Accessibility Tree: Paciello Group</a></p>
+        <img src="img/chrome-accessibility-tree.png" alt="Accessibility Tree in Chrome">
+        <p><a href="https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/" target="_blank" title="Link opens in a new window">The Browser Accessibility Tree: Paciello Group<span class="visuallyhidden"> opens in a new window</span></a></p>
       </section>
 
       <section>
         <h2>Run an accessibility checker</h2>
         <ul>
-          <li><a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US">aXe Chrome</a></li>
-          <li><a href="https://addons.mozilla.org/en-us/firefox/addon/axe-devtools/">aXe Firefox</a></li>
-          <li><a href="http://wave.webaim.org/extension/">WAVE</a></li>
-          <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Chrome Accessibility Developer Tools</a></li>
-          <li><a href="http://tenon.io">Tenon</a></li>
+          <li><a href="http://www.deque.com/products/axe" target="_blank" title="Link opens in a new window">aXe<span class="visuallyhidden"> opens in a new window</span></a></li>
+          <li><a href="http://wave.webaim.org/" target="_blank" title="Link opens in a new window">WAVE<span class="visuallyhidden"> opens in a new window</span></a></li>
+          <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en" target="_blank" title="Link opens in a new window">Chrome Accessibility Developer Tools<span class="visuallyhidden"> opens in a new window</span></a></li>
+          <li><a href="http://tenon.io" target="_blank" title="Link opens in a new window">Tenon<span class="visuallyhidden"> opens in a new window</span></a></li>
         </ul>
       </section>
 
 			<section>
 				<h2>General Resources</h2>
-					<ul>
-						<li><a href="http://webaim.org/projects/screenreadersurvey6/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
+				<ul>
+					<li><a href="http://webaim.org/projects/screenreadersurvey6/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
+					<li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
+					<li><a href="http://a11yproject.com/" target="_blank" title="Link opens in a new window">The Accessibility Project<span class="visuallyhidden"> opens in a new window</span></a></li>
+          <li><a href="https://wet-boew.github.io/v4.0-ci/index-en.html" target="_blank" title="Link opens in a new window">Web Experience Toolkit<span class="visuallyhidden"> opens in a new window</span></a></li>
+          <li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a>
+				</ul>
+				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+			</section>
 
-						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
-
-						<li><a href="http://a11yproject.com/" target="_blank">The Accessibility Project<span class="visuallyhidden"> opens in a new window</span></a></li>
-
-            <li><a href="https://wet-boew.github.io/v4.0-ci/index-en.html" target="_blank">Web Experience Toolkit<span class="visuallyhidden"> opens in a new window</span></a></li>
-
-            <li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a>
-					</ul>
+			<section>
+				<h2>GDI Course Survey</h2>
+				<p>Your feedback is valuable. Tell us what worked and what we can improve on.</p>
+				<p><a href="bit.ly/GDI-NYC">bit.ly/GDI-NYC</a></p>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
 
     </div>
-  		<footer>
-        <div class="copyright">
-          Web Accessibility ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
-		</div>
+
+		<footer>
+      <div class="copyright">
+        Web Accessibility ~ Girl Develop It ~
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+	</div>
 
 
 		<script src="lib/js/head.min.js"></script>
